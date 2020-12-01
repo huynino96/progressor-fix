@@ -24,6 +24,7 @@ def count_class(repository_endpoint):
         else:
             fileName = file_content.name
             file = File(fileName)
+
             if file.is_python() or file.is_java() or file.is_php() or file.is_javascript():
                 decoded_content = file_content.decoded_content
                 inside_content = decoded_content.decode('utf-8')

@@ -50,7 +50,7 @@ Home.getInitialProps = async (context) => {
     const results = data.map(item => (
         {
             name: item.date,
-            total: item.total,
+            // total: item.total,
             javascript: item.javascript,
             java: item.java,
             python: item.python,

@@ -19,4 +19,4 @@ def count_file_and_folder(repository_endpoint):
         else:
             listFile.append(file_content)
 
-    return generate_dates_file_and_folder(len(listDir), len(listFile))
+    return generate_dates_file_and_folder(len(listFile), len(listDir))

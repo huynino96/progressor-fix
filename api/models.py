@@ -24,19 +24,24 @@ class Github(TimestampedModel):
 
 
 class Language(TimestampedModel):
-    github = models.ForeignKey(
-        'api.Github', related_name='languages', on_delete=models.CASCADE
-    )
-    javascript = models.IntegerField()
-    java = models.IntegerField()
-    python = models.IntegerField()
-    php = models.IntegerField()
-    type = models.CharField(max_length=20)
+    # github = models.ForeignKey(
+    #     'api.Github', related_name='languages', on_delete=models.CASCADE
+    # )
+    github = models.CharField(max_length=200, blank=False)
+    javascript = models.IntegerField(blank=False)
+    java = models.IntegerField(blank=False)
+    python = models.IntegerField(blank=False)
+    php = models.IntegerField(blank=False)
+    # type = models.CharField(max_length=100)
+    date = models.CharField(blank=False, max_length=200)
+    # date = models.DateTimeField(auto_now=False, auto_now_add=False)
 
 
 class Media(TimestampedModel):
-    github = models.ForeignKey(
-        'api.Github', related_name='medias', on_delete=models.CASCADE
-    )
+    # github = models.ForeignKey(
+    #     'api.Github', related_name='medias', on_delete=models.CASCADE
+    # )
+    github = models.CharField(max_length=200, blank=False)
     file = models.IntegerField()
     folder = models.IntegerField()
+    date = models.CharField(blank=False, max_length=200)

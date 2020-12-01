@@ -1,2 +1,2 @@
 REPOSITORY = 'deirpes/waveform-lumen'
-GITHUB_TOKEN = '8d739adec42db8dd1b21b0f230e040b09e69626d'
+GITHUB_TOKEN = 'dbbd00fbbdb6a996f5a9b091e7bae9f4671f7b9a'
